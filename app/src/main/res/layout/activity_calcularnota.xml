@@ -159,26 +159,20 @@
         android:textColor="@android:color/background_light"
         android:text="Calcular Promedio"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="10dp">
-
-    </LinearLayout>
-
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/et_nfinal"
         android:layout_width="match_parent"
+        android:textColorLink="@color/colorPrimary"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:ems="10"
         android:hint="Nota final"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/et_nminima"
         android:layout_width="match_parent"
+        android:textColorLink="@color/colorPrimary"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:ems="10"
         android:hint="Nota minima"
         android:inputType="textPersonName" />
