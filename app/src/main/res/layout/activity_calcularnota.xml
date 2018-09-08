@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Notas">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:text="Notas IPChile" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="EPR1: "/>
+
+        <EditText
+            android:id="@+id/et_erp1"
+            android:layout_width="80dp"
+            android:textColorLink="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:hint="EPR1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="EPR2: "/>
+
+        <EditText
+            android:id="@+id/et_erp2"
+            android:layout_width="80dp"
+            android:textColorLink="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:hint="EPR2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="EPE1: "/>
+        <EditText
+            android:id="@+id/et_epe1"
+            android:layout_width="80dp"
+            android:textColorLink="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:hint="EPE1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="EPE2: "/>
+        <EditText
+            android:id="@+id/et_epe2"
+            android:layout_width="80dp"
+            android:textColorLink="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:hint="EPE2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColorLink="@color/colorPrimary"
+            android:text="EVA1: "/>
+
+        <EditText
+            android:id="@+id/et_eva1"
+            android:layout_width="80dp"
+            android:textColorLink="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:hint="EVA1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="EVA2: "/>
+
+        <EditText
+            android:id="@+id/et_eva2"
+            android:layout_width="80dp"
+            android:textColorLink="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:hint="EVA2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="EVA3: "/>
+        <EditText
+            android:id="@+id/et_eva3"
+            android:layout_width="80dp"
+            android:textColorLink="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:hint="EVA3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="EVA4: "/>
+        <EditText
+            android:id="@+id/et_eva4"
+            android:layout_width="80dp"
+            android:textColorLink="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:hint="EVA5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_calcularpromedio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/background_light"
+        android:text="Calcular Promedio"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Nota final"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Nota minima"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_calcularexamen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Calcular examen"
+        android:textColor="@android:color/background_light" />
+
+
+</LinearLayout>
